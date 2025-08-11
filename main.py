@@ -1,5 +1,3 @@
-from typing import final
-
 from aiohttp import ClientSession
 import asyncio
 import json
@@ -16,7 +14,7 @@ HEADERS = {
 
 data = {
     'order_ids': [
-        input('zxc:')
+        input('Введите номер поставки:')
         ]
 }
 
@@ -113,3 +111,5 @@ for i in final_data.keys():
         counter += 1
     counter+=2
 wb.save("sample.xlsx")
+
+print('seu<3')
